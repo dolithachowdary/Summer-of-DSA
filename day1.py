@@ -1,4 +1,4 @@
-'''#unique in given list
+#unique in given list
 a=[1,2,3,4,4,4]
 def uni(a):
     d={}
@@ -72,46 +72,46 @@ def func(s):
             a+=chr(ord(i)-32)
     return a
 print(func("AbDf"))
-'''
 
-# def fun(a,b):
-#     new=''
-#     n=min(len(a),len(b))
-#     res=''
-#     for i in range(n):
-#         res+=a[i]
-#         res+=b[i]
-#     if len(a)>len(b):
-#         new+=a[n:]
-#         for x in new:
-#             res+=chr(ord(x)-32)
-#     else:
-#         new+=b[n:]
-#         for x in new:
-#             res+=chr(ord(x)-32)
-#     print(res)
-# fun('abcd','jk')
 
-# def sub(a,b):
-#     if b in a :
-#         return True
-#     else:
-#         return False
-# print(sub('abcd','ad'))
+def fun(a,b):
+    new=''
+    n=min(len(a),len(b))
+    res=''
+    for i in range(n):
+        res+=a[i]
+        res+=b[i]
+    if len(a)>len(b):
+        new+=a[n:]
+        for x in new:
+            res+=chr(ord(x)-32)
+    else:
+        new+=b[n:]
+        for x in new:
+            res+=chr(ord(x)-32)
+    print(res)
+fun('abcd','jk')
 
-# def cir(a,b):
-#     r=a+a
-#     print(b in r)
-# cir('abcd','cda')
+def sub(a,b):
+    if b in a :
+        return True
+    else:
+        return False
+print(sub('abcd','ad'))
 
-#3a4b= aaabbbb , 12a3d234c , 12abc3as4s
-'''
+def cir(a,b):
+    r=a+a
+    print(b in r)
+cir('abcd','cda')
+
+3a4b= aaabbbb , 12a3d234c , 12abc3as4s
+
 def first(s):
     for i in range (0,len(s),2):
         n=int(s[i])
         for j in range (n):
             print(s[i+1],end="")
-first('3a4b5c') '''
+first('3a4b5c') 
 
 def second(s):
     num=""
