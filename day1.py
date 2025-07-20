@@ -1,155 +1,257 @@
-#unique in given list
-a=[1,2,3,4,4,4]
+# Day 1 - DSA Practice with Strings, Numbers, and Frequency Problems
+
 def uni(a):
-    d={}
+    """
+    Prints unique (non-repeating) elements in the given list.
+
+    Parameters:
+    a (list): A list of integers.
+
+    Example:
+    >>> uni([1, 2, 3, 4, 4, 4])
+    1
+    2
+    3
+    """
+    d = {}
     for i in a:
-        if i in d:
-            d[i]+=1
-        else:
-            d[i]=1
-    for key,value in d.items():
-        if value==1:
+        d[i] = d.get(i, 0) + 1
+    for key, value in d.items():
+        if value == 1:
             print(key)
 
-uni(a)
 
-#given no is prime or not
-print("enter number:")
-c=int(input())
 def isprime(c):
-    if c<=1:
+    """
+    Checks if a number is prime.
+
+    Parameters:
+    c (int): The number to check.
+
+    Returns:
+    bool: True if prime, False otherwise.
+
+    Example:
+    >>> isprime(7)
+    True
+    """
+    if c <= 1:
         return False
-    for i in range(2,c):
-        if c%i==0:
+    for i in range(2, c):
+        if c % i == 0:
             return False
     return True
-    
-print(isprime(c))
 
-#count vowels in a string
 
-v={'a','e','i','o','u'}
-s='abced'
 def vowel(s):
-    count=0
+    """
+    Counts the number of vowels in a given string.
+
+    Parameters:
+    s (str): Input string.
+
+    Returns:
+    int: Number of vowels.
+
+    Example:
+    >>> vowel('abced')
+    2
+    """
+    v = {'a', 'e', 'i', 'o', 'u'}
+    count = 0
     for i in s:
         if i in v:
-            count+=1
+            count += 1
     return count
-print("no of vowels:",vowel(s))
 
 
+def ascii_sum(s):
+    """
+    Calculates a weighted sum of uppercase letters based on their positions in the alphabet.
 
-def func(s):
-    l=[]
-    for i in range(65,91):
-        l.append(chr(i))
-    count=0
+    Parameters:
+    s (str): Uppercase string (e.g., 'ABC').
+
+    Returns:
+    int: Weighted sum.
+
+    Example:
+    >>> ascii_sum('ABC')
+    6  # A=1, B=2, C=3 → 1+2+3
+    """
+    l = [chr(i) for i in range(65, 91)]
+    count = 0
     for i in s:
-        count+= 1+l.index(i)
+        count += 1 + l.index(i)
     return count
-print(func('ABC'))
 
-v={'a','e','i','o','u'}
-def func(s):
-    a=''
+
+def to_uppercase_vowels(s):
+    """
+    Converts all vowels in the string to uppercase, leaves consonants as-is.
+
+    Parameters:
+    s (str): Input string.
+
+    Returns:
+    str: Modified string.
+
+    Example:
+    >>> to_uppercase_vowels('abceik')
+    'AbcEIk'
+    """
+    v = {'a', 'e', 'i', 'o', 'u'}
+    a = ''
     for i in s:
         if i in v:
-            
-            a+=chr(ord(i)-32)
-
+            a += chr(ord(i) - 32)
         else:
-            a+=i
+            a += i
     return a
-print(func('abceik'))
 
-def func(s):
-    a=''
+
+def toggle_case(s):
+    """
+    Toggles the case of each character in the string:
+    - Uppercase becomes lowercase.
+    - Lowercase becomes uppercase.
+
+    Parameters:
+    s (str): Input string.
+
+    Returns:
+    str: Case-toggled string.
+
+    Example:
+    >>> toggle_case("AbDf")
+    'aBdF'
+    """
+    a = ''
     for i in s:
-        if ord(i)>64 and ord(i)<96:
-            a+=chr(ord(i)+32)
+        if 'A' <= i <= 'Z':
+            a += chr(ord(i) + 32)
         else:
-            a+=chr(ord(i)-32)
+            a += chr(ord(i) - 32)
     return a
-print(func("AbDf"))
 
 
-def fun(a,b):
-    new=''
-    n=min(len(a),len(b))
-    res=''
+def zip_and_upper(a, b):
+    """
+    Zips two strings character by character.
+    If one string is longer, appends the remaining characters in uppercase.
+
+    Parameters:
+    a (str): First string.
+    b (str): Second string.
+
+    Example:
+    >>> zip_and_upper('abcd', 'jk')
+    'ajbkCD'
+    """
+    res = ''
+    n = min(len(a), len(b))
     for i in range(n):
-        res+=a[i]
-        res+=b[i]
-    if len(a)>len(b):
-        new+=a[n:]
-        for x in new:
-            res+=chr(ord(x)-32)
+        res += a[i] + b[i]
+    if len(a) > len(b):
+        res += a[n:].upper()
     else:
-        new+=b[n:]
-        for x in new:
-            res+=chr(ord(x)-32)
+        res += b[n:].upper()
     print(res)
-fun('abcd','jk')
 
-def sub(a,b):
-    if b in a :
-        return True
-    else:
-        return False
-print(sub('abcd','ad'))
 
-def cir(a,b):
-    r=a+a
+def sub(a, b):
+    """
+    Checks whether string `b` is a substring of `a`.
+
+    Parameters:
+    a (str): The main string.
+    b (str): The substring to check.
+
+    Returns:
+    bool: True if `b` is a substring of `a`.
+
+    Example:
+    >>> sub('abcd', 'bc')
+    True
+    """
+    return b in a
+
+
+def cir(a, b):
+    """
+    Checks if one string is a rotation of another.
+
+    Parameters:
+    a (str): Original string.
+    b (str): Rotated string.
+
+    Example:
+    >>> cir('abcd', 'cda')
+    True
+    """
+    r = a + a
     print(b in r)
-cir('abcd','cda')
 
-3a4b= aaabbbb , 12a3d234c , 12abc3as4s
 
 def first(s):
-    for i in range (0,len(s),2):
-        n=int(s[i])
-        for j in range (n):
-            print(s[i+1],end="")
-first('3a4b5c') 
+    """
+    Decodes a string of format like '3a4b' → 'aaabbbb'.
+
+    Parameters:
+    s (str): Encoded string with digit-character pairs.
+
+    Example:
+    >>> first('3a4b')
+    'aaabbbb'
+    """
+    for i in range(0, len(s), 2):
+        n = int(s[i])
+        print(s[i + 1] * n, end='')
+
 
 def second(s):
-    num=""
-    res=""
+    """
+    Decodes a string of format like '10a11b' → 'aaaaaaaaaabbbbbbbbbbb'.
+
+    Parameters:
+    s (str): Encoded string with multi-digit numbers.
+
+    Returns:
+    str: Decoded string.
+    """
+    num = ""
+    res = ""
     for i in s:
         if i.isdigit():
-            num+=i
+            num += i
         else:
-            res+=int(num)*i
-            num=""
+            res += int(num) * i
+            num = ""
     return res
-print(second("10a11b"))
+
 
 def third(s):
-    res=""
-    num=""
-    a=""
-    i=0
-    while i<len(s):
-        while s[i].isdigit():
-            num+=s[i]
-            i+=1
-        while i<len(s) and s[i].isalpha():
-            a+=s[i]
-            i+=1
-        res+=int(num)*a
-        a=""
-        num=""
+    """
+    Decodes a string with number+char(s) groups like '10ab3cd' → 'ababababababababababcdcdcd'.
+
+    Parameters:
+    s (str): Encoded string with repeated character groups.
+
+    Returns:
+    str: Decoded string.
+    """
+    res = ""
+    num = ""
+    a = ""
+    i = 0
+    while i < len(s):
+        while i < len(s) and s[i].isdigit():
+            num += s[i]
+            i += 1
+        while i < len(s) and s[i].isalpha():
+            a += s[i]
+            i += 1
+        res += int(num) * a
+        num = ""
+        a = ""
     return res
-print(third("10ab3cd"))
-    
-
-        
-
-    
-        
-
-    
-
-
-
