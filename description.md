@@ -26,7 +26,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 |-----|------------------------------------------------|------------------|----------|
 | 1   | Basics, Strings, Prime Check, Encoding         | 10+              | ✅ Done   |
 | 2   | Arrays, Bit Manipulation, Swapping             | 6+               | ✅ Done   |
-| 3   | _Coming Soon..._                               | —                | ⏳ Pending |
+| 3   | Bit Manipulation, Recursion                    | 10+              | ✅ Done   |
 | 4   | _Coming Soon..._                               | —                | ⏳ Pending |
 | 5   | _Coming Soon..._                               | —                | ⏳ Pending |
 
@@ -46,6 +46,8 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 - Substring and circular match check
 - Run-length decoding patterns (e.g., `3a4b5c` → `aaabbbbccccc`)
 
+---
+
 ### ✅ Day 2:
 - First missing positive integer
 - Move zeros to end
@@ -53,6 +55,21 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 - Swap numbers with zeros
 - Count set bits in binary
 - Reordering odd and even elements
+
+---
+
+### ✅ Day 3:
+**Bit Manipulation:**
+- Decimal to binary (manual and bitwise)
+- Binary to decimal
+- Count number of 1’s and 0’s in binary
+- First set bit from right and left
+- Set or unset i-th bit
+- Check if number is a power of 2
+- XOR to find duplicate in array
+
+**Recursion:**
+- Count digits in a number using recursion
 
 ---
 
@@ -77,7 +94,6 @@ By the end of this project, I aim to:
 - Gain fluency in solving DSA problems using Python
 - Improve coding speed and algorithmic thinking
 - Maintain clean, modular code with practice
-
 
 ---
 
