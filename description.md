@@ -7,6 +7,7 @@ Welcome to my **Summer of DSA** journey — a collection of Python programs solv
 ## 🎯 Objective
 
 The aim of this project is to:
+
 - Practice a wide range of DSA problems regularly.
 - Improve Python problem-solving and logic-building skills.
 - Create a consistent coding habit.
@@ -22,13 +23,13 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 
 ## 🧾 Progress Tracker
 
-| Day | Topics Covered                                 | Problems Solved | Status   |
-|-----|------------------------------------------------|------------------|----------|
-| 1   | Basics, Strings, Prime Check, Encoding         | 10+              | ✅ Done   |
-| 2   | Arrays, Bit Manipulation, Swapping             | 6+               | ✅ Done   |
-| 3   | Bit Manipulation, Recursion                    | 10+              | ✅ Done   |
-| 4   | _Coming Soon..._                               | —                | ⏳ Pending |
-| 5   | _Coming Soon..._                               | —                | ⏳ Pending |
+| Day | Topics Covered                                 | Problems Solved | Status     |
+|-----|------------------------------------------------|------------------|------------|
+| 1   | Basics, Strings, Prime Check, Encoding         | 10+              | ✅ Done     |
+| 2   | Arrays, Bit Manipulation, Swapping             | 6+               | ✅ Done     |
+| 3   | Bit Manipulation, Recursion                    | 10+              | ✅ Done     |
+| 4   | Recursion (Digit/Number/String Based)          | 9                | ✅ Done     |
+| 5   | _Coming Soon..._                               | —                | ⏳ Pending  |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -42,8 +43,8 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 - Vowel counting in a string
 - ASCII-based value summing
 - Custom case switching
-- Interleaving strings with uppercase remaining
-- Substring and circular match check
+- Interleaving strings with uppercase preserved
+- Substring and circular match checks
 - Run-length decoding patterns (e.g., `3a4b5c` → `aaabbbbccccc`)
 
 ---
@@ -73,6 +74,20 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 
 ---
 
+### ✅ Day 4:
+**Recursion Practice (Digit, String & List Problems):**
+- Sum of digits in an integer
+- Count digits in an integer
+- Find min and max from a list using recursion
+- Reverse a number using recursion
+- Check if a string is palindrome
+- Product of digits in an integer
+- Sum of list elements
+- Count zeros in a number
+- GCD of two numbers (Euclidean algorithm)
+
+---
+
 ## 🛠 Tech Used
 
 - **Language:** Python 3
@@ -83,7 +98,6 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 ## 🔄 Upcoming Additions
 
 - Daily problems from advanced topics (e.g., recursion, sorting, linked lists, trees)
-- More structured folders with README inside each day
 - Unit testing and time-space complexity notes
 
 ---
@@ -91,9 +105,11 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 ## 🧠 Learning Outcome
 
 By the end of this project, I aim to:
+
 - Gain fluency in solving DSA problems using Python
 - Improve coding speed and algorithmic thinking
 - Maintain clean, modular code with practice
+- Build a public portfolio of structured learning
 
 ---
 
