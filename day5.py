@@ -241,3 +241,89 @@ def permute(s):
     return res
 
 print(permute("abc"))
+# 11. Power of a number using recursion
+def power(base, exp):
+    """Recursively computes base raised to the power of exp (base^exp)."""
+    if exp == 0:
+        return 1
+    return base * power(base, exp - 1)
+
+# 12. Check if a number is a palindrome using recursion
+def is_palindrome_num(n, temp=None):
+    """Recursively checks if a number is a palindrome."""
+    if temp is None:
+        temp = n
+    if n == 0:
+        return 0
+    rev = (10 * is_palindrome_num(n // 10, temp)) + (n % 10)
+    return rev == temp if n == temp else rev
+
+# 13. Print numbers from 1 to n using recursion
+def print_1_to_n(n):
+    """Prints numbers from 1 to n recursively."""
+    if n == 0:
+        return
+    print_1_to_n(n - 1)
+    print(n, end=' ')
+
+# 14. Print numbers from n to 1 using recursion
+def print_n_to_1(n):
+    """Prints numbers from n to 1 recursively."""
+    if n == 0:
+        return
+    print(n, end=' ')
+    print_n_to_1(n - 1)
+
+# 15. Sum of first n natural numbers using recursion
+def sum_n(n):
+    """Returns the sum of first n natural numbers recursively."""
+    if n == 0:
+        return 0
+    return n + sum_n(n - 1)
+
+# 16. Check if an array is sorted (recursively)
+def is_sorted(arr, i=0):
+    """Checks recursively if the array is sorted in ascending order."""
+    if i == len(arr) - 1:
+        return True
+    return arr[i] <= arr[i+1] and is_sorted(arr, i+1)
+
+# 17. Find the first index of an element in array using recursion
+def first_index(arr, x, i=0):
+    """Recursively finds the first index of x in array arr."""
+    if i == len(arr):
+        return -1
+    if arr[i] == x:
+        return i
+    return first_index(arr, x, i+1)
+
+# 18. Find the last index of an element in array using recursion
+def last_index(arr, x, i=0):
+    """Recursively finds the last index of x in array arr."""
+    if i == len(arr):
+        return -1
+    rest = last_index(arr, x, i+1)
+    if rest != -1:
+        return rest
+    if arr[i] == x:
+        return i
+    return -1
+
+# 19. Replace all occurrences of 'pi' in a string with '3.14'
+def replace_pi(s):
+    """Recursively replaces all occurrences of 'pi' with '3.14'."""
+    if len(s) <= 1:
+        return s
+    if s[:2] == 'pi':
+        return '3.14' + replace_pi(s[2:])
+    return s[0] + replace_pi(s[1:])
+
+# 20. Remove adjacent duplicates in a string using recursion
+def remove_adjacent_duplicates(s):
+    """Recursively removes adjacent duplicate characters in a string."""
+    if len(s) <= 1:
+        return s
+    if s[0] == s[1]:
+        return remove_adjacent_duplicates(s[1:])
+    return s[0] + remove_adjacent_duplicates(s[1:])
+
