@@ -327,3 +327,16 @@ def remove_adjacent_duplicates(s):
         return remove_adjacent_duplicates(s[1:])
     return s[0] + remove_adjacent_duplicates(s[1:])
 
+if __name__ == "__main__":
+    print("power(2, 5):", power(2, 5))
+    print("is_palindrome_num(1221):", is_palindrome_num(1221))
+    print("print_1_to_n(5):", end=' '); print_1_to_n(5); print()
+    print("print_n_to_1(5):", end=' '); print_n_to_1(5); print()
+    print("sum_n(10):", sum_n(10))
+    print("is_sorted([1, 2, 3, 5]):", is_sorted([1, 2, 3, 5]))
+    print("first_index([1, 2, 3, 2, 5], 2):", first_index([1, 2, 3, 2, 5], 2))
+    print("last_index([1, 2, 3, 2, 5], 2):", last_index([1, 2, 3, 2, 5], 2))
+    print("replace_pi('pippi'):", replace_pi("pippi"))
+    print("remove_adjacent_duplicates('aabbccddeee'):", remove_adjacent_duplicates("aabbccddeee"))
+
+
