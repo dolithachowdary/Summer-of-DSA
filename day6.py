@@ -240,3 +240,11 @@ def word_break(s, word_dict):
     backtrack(0, [])
     return res
 
+✅ Sample Usage:
+
+print(subsets([1, 2, 3]))
+print(combine(4, 2))
+print(letter_case_permutation("a1b2"))
+print(generate_parentheses(3))
+print(word_break("leetcode", {"leet", "code"}))
+
