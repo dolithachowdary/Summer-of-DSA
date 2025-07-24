@@ -30,7 +30,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 3   | Bit Manipulation, Recursion                    | 10+              | ✅ Done     |
 | 4   | Recursion (Digit/Number/String Based)          | 9                | ✅ Done     |
 | 5   | Recursion (Advanced, Lists, Strings, Math)     | 20               | ✅ Done     |
-| 6   | _Coming Soon..._                               | —                | ⏳ Pending  |
+| 6   | Subsets, Subarrays, Prefix Sum, XOR Tricks     | 12               | ✅ Done     |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -111,6 +111,23 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 - Generate all permutations of a string
 - Check if array is sorted using recursion
 - Sum of array using recursion
+
+---
+
+### ✅ Day 6:
+**Subsets, Prefix Sums & XOR Logic:**
+- Generate all subsets using recursion
+- Find XOR of numbers from 1 to N
+- Count of subarrays with given XOR
+- Count of subarrays with even XOR
+- Count subarrays with sum divisible by K (Prefix Sum Modulo logic)
+- Kadane's Algorithm for max subarray sum
+- Prefix sum for array range queries
+- Brute-force vs Optimized prefix sum
+- Sum of all subarrays
+- XOR of all subarrays
+- Check if prefix sum is divisible by k
+- Subarrays with equal number of 0’s and 1’s
 
 ---
 
