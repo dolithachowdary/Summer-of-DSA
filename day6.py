@@ -141,3 +141,102 @@ def last_index(arr, target, i=0):
         return i
     return -1
 print("Last index of 7 in [1, 7, 3, 7]:", last_index([1, 7, 3, 7], 7))
+
+
+# 11. Subsets (Power Set)
+def subsets(nums):
+    res = []
+
+    def backtrack(start, path):
+        res.append(path[:])  # Append a copy of the current path
+        for i in range(start, len(nums)):
+            path.append(nums[i])
+            backtrack(i + 1, path)
+            path.pop()  # Backtrack
+
+    backtrack(0, [])
+    return res
+
+
+# 12. Combinations (n choose k)
+def combine(n, k):
+    res = []
+
+    def backtrack(start, path):
+        if len(path) == k:
+            res.append(path[:])
+            return
+        for i in range(start, n + 1):
+            path.append(i)
+            backtrack(i + 1, path)
+            path.pop()
+
+    backtrack(1, [])
+    return res
+
+
+# 13. Letter Case Permutation
+def letter_case_permutation(s):
+    res = []
+
+    def backtrack(index, path):
+        if index == len(s):
+            res.append("".join(path))
+            return
+        if s[index].isalpha():
+            # Lowercase branch
+            path.append(s[index].lower())
+            backtrack(index + 1, path)
+            path.pop()
+            # Uppercase branch
+            path.append(s[index].upper())
+            backtrack(index + 1, path)
+            path.pop()
+        else:
+            path.append(s[index])
+            backtrack(index + 1, path)
+            path.pop()
+
+    backtrack(0, [])
+    return res
+
+
+# 14. Generate Well-Formed Parentheses
+def generate_parentheses(n):
+    res = []
+
+    def backtrack(open_count, close_count, path):
+        if len(path) == 2 * n:
+            res.append("".join(path))
+            return
+        if open_count < n:
+            path.append('(')
+            backtrack(open_count + 1, close_count, path)
+            path.pop()
+        if close_count < open_count:
+            path.append(')')
+            backtrack(open_count, close_count + 1, path)
+            path.pop()
+
+    backtrack(0, 0, [])
+    return res
+
+
+# 15. Word Break using dictionary
+def word_break(s, word_dict):
+    res = []
+
+    def backtrack(start, path):
+        if start == len(s):
+            res.append(" ".join(path))
+            return
+        for end in range(start + 1, len(s) + 1):
+            word = s[start:end]
+            if word in word_dict:
+                path.append(word)
+                backtrack(end, path)
+                path.pop()
+
+    backtrack(0, [])
+    return res
+
