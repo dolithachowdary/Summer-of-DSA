@@ -30,7 +30,8 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 3   | Bit Manipulation, Recursion                    | 10+              | ✅ Done     |
 | 4   | Recursion (Digit/Number/String Based)          | 9                | ✅ Done     |
 | 5   | Recursion (Advanced, Lists, Strings, Math)     | 20               | ✅ Done     |
-| 6   | Recursion - Part 3, Backtracking Basics        | 15+              | ✅ Done     |
+| 6   | Recursion - Part 3, Backtracking Basics        | 20+              | ✅ Done     |
+| 7   | Backtracking Advanced: N-Queens, Maze Solvers  | 5+               | ✅ Done     |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -61,6 +62,17 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 
 ---
 
+### ✅ Day 7:
+**Backtracking Advanced Problems**
+
+- Generate all permutations of a list or string
+- Solve the N-Queens problem using backtracking
+- Word break (returning all possible sentences)
+- Find paths through a maze (DFS-style backtracking)
+- Generate all binary strings without consecutive 1s
+
+---
+
 ## 🛠 Tech Used
 
 - **Language:** Python 3
@@ -70,8 +82,10 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 
 ## 🔄 Upcoming Additions
 
-- Daily problems from advanced topics (e.g., recursion, sorting, linked lists, trees)
-- Unit testing and time-space complexity notes
+- Daily problems from advanced topics (e.g., sorting, searching, trees, linked lists)
+- Unit testing for solutions
+- Time and space complexity notes for each problem
+- GUI-based DSA visualizers
 
 ---
 
@@ -81,7 +95,7 @@ By the end of this project, I aim to:
 
 - Gain fluency in solving DSA problems using Python
 - Improve coding speed and algorithmic thinking
-- Maintain clean, modular code with practice
+- Maintain clean, modular code with well-documented practice
 - Build a public portfolio of structured learning
 
 ---
