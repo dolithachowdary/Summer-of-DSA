@@ -30,8 +30,8 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 3   | Bit Manipulation, Recursion                    | 10+              | ✅ Done     |
 | 4   | Recursion (Digit/Number/String Based)          | 9                | ✅ Done     |
 | 5   | Recursion (Advanced, Lists, Strings, Math)     | 20               | ✅ Done     |
-| 6   | Recursion - Part 3, Backtracking Basics        | 20+              | ✅ Done     |
-| 7   | Backtracking Advanced: N-Queens, Maze Solvers  | 5+               | ✅ Done     |
+| 6   | Subsets, Subarrays, Prefix Sum, XOR Tricks     | 15+              | ✅ Done     |
+| 7   | Backtracking, Combinations and Permutations    | 10+              | ✅ Done     |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -39,38 +39,117 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 
 ## 📅 Day-Wise Highlights
 
-### ✅ Day 6:  
-**Recursion - Part 3 + Backtracking**
+### ✅ Day 1:
+- Unique elements in a list
+- Prime number checker
+- Vowel counting in a string
+- ASCII-based value summing
+- Custom case switching
+- Interleaving strings with uppercase preserved
+- Substring and circular match checks
+- Run-length decoding patterns (e.g., `3a4b5c` → `aaabbbbccccc`)
 
-🔁 Recursive Problems:
-- Product of digits in an integer
-- Reverse a string recursively
+---
+
+### ✅ Day 2:
+- First missing positive integer
+- Move zeros to end
+- Move even numbers to end
+- Swap numbers with zeros
+- Count set bits in binary
+- Reordering odd and even elements
+
+---
+
+### ✅ Day 3:
+**Bit Manipulation:**
+- Decimal to binary (manual and bitwise)
+- Binary to decimal
+- Count number of 1’s and 0’s in binary
+- First set bit from right and left
+- Set or unset i-th bit
+- Check if number is a power of 2
+- XOR to find duplicate in array
+
+**Recursion:**
+- Count digits in a number using recursion
+
+---
+
+### ✅ Day 4:
+**Recursion Practice (Digit, String & List Problems):**
+- Sum of digits in an integer
+- Count digits in an integer
+- Find min and max from a list using recursion
+- Reverse a number using recursion
 - Check if a string is palindrome
-- Power of a number (x^n)
-- Check if an array is strictly increasing
-- Binary search recursively
-- First and last index of element in a list
-- Print all subsets of a string
-- GCD using recursion
+- Product of digits in an integer
+- Sum of list elements
+- Count zeros in a number
+- GCD of two numbers (Euclidean algorithm)
 
-🔍 Backtracking Problems:
-- Generate all subsets (Power set) of a list
-- Generate all combinations of `n choose k`
-- Letter case permutation for a string
-- Generate well-formed parentheses (balanced)
-- Word break using dictionary
+---
+
+### ✅ Day 5:
+**Advanced Recursion Problems:**
+- Sum of digits
+- Count digits
+- Min and max in list
+- Reverse number recursively
+- Check if a string is palindrome
+- Product of digits
+- Sum of list elements
+- Count zeros in number
+- GCD of two numbers
+- Print numbers from 1 to N and N to 1 recursively
+- Find factorial using recursion
+- Find nth Fibonacci number
+- Replace all occurrences of a character in string
+- Remove all x from string
+- Move all x to end
+- Remove duplicates in string (preserving order)
+- Generate all subsequences of a string
+- Generate all permutations of a string
+- Check if array is sorted using recursion
+- Sum of array using recursion
+
+---
+
+### ✅ Day 6:
+**Subsets, Prefix Sums & XOR Logic:**
+- Generate all subsets using recursion
+- Find XOR of numbers from 1 to N
+- Count of subarrays with given XOR
+- Count of subarrays with even XOR
+- Count subarrays with sum divisible by K (Prefix Sum Modulo logic)
+- Kadane's Algorithm for max subarray sum
+- Prefix sum for array range queries
+- Brute-force vs Optimized prefix sum
+- Sum of all subarrays
+- XOR of all subarrays
+- Check if prefix sum is divisible by k
+- Subarrays with equal number of 0’s and 1’s
+- Count number of subarrays with XOR = k using hashmap
+- Longest subarray with sum = k (sliding window/hashmap)
 
 ---
 
 ### ✅ Day 7:
-**Backtracking Advanced Problems**
-
-- Generate all permutations of a list or string
-- Solve the N-Queens problem using backtracking
-- Word break (returning all possible sentences)
-- Find paths through a maze (DFS-style backtracking)
-- Generate all binary strings without consecutive 1s
-
+**Backtracking Advanced, Combinations & Permutations**
+- Generate all permutations of a list
+- Subsets with duplicates (no repeated subset)
+- Palindrome partitioning of a string
+- N-Queens problem (basic)
+- Combination sum I & II
+- Sudoku Solver
+- Word search in grid
+- Restore IP Addresses
+- Rat in a Maze (Grid backtracking)
+- Generate expressions with target sum
+- Unique paths with obstacles
+- Knight’s tour problem (basic)
+- Count all solutions to N-Queens
+- Permutations with conditions
 ---
 
 ## 🛠 Tech Used
@@ -82,10 +161,9 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 
 ## 🔄 Upcoming Additions
 
-- Daily problems from advanced topics (e.g., sorting, searching, trees, linked lists)
-- Unit testing for solutions
-- Time and space complexity notes for each problem
-- GUI-based DSA visualizers
+- Daily problems from advanced topics (e.g., sorting, linked lists, trees)
+- Unit testing and time-space complexity notes
+- GUI for problem navigator and visualizations
 
 ---
 
@@ -95,7 +173,7 @@ By the end of this project, I aim to:
 
 - Gain fluency in solving DSA problems using Python
 - Improve coding speed and algorithmic thinking
-- Maintain clean, modular code with well-documented practice
+- Maintain clean, modular code with practice
 - Build a public portfolio of structured learning
 
 ---
