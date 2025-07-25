@@ -136,3 +136,219 @@ if __name__ == "__main__":
         print("--")
 
     print("Binary strings with no consecutive 1s of length 3:", generate_binary_strings(3))
+
+
+# 📅 Day 7 - Advanced Backtracking Problems (Extended Set)
+from typing import List
+
+def combination_sum(candidates: List[int], target: int) -> List[List[int]]:
+    """
+    Find all unique combinations that sum to target (elements can repeat).
+    """
+    def backtrack(start, path, total):
+        if total == target:
+            result.append(path[:])
+            return
+        if total > target:
+            return
+        for i in range(start, len(candidates)):
+            path.append(candidates[i])
+            backtrack(i, path, total + candidates[i])
+            path.pop()
+
+    result = []
+    backtrack(0, [], 0)
+    return result
+
+
+def combination_sum2(candidates: List[int], target: int) -> List[List[int]]:
+    """
+    Find all unique combinations that sum to target (elements used once).
+    """
+    candidates.sort()
+    def backtrack(start, path, total):
+        if total == target:
+            result.append(path[:])
+            return
+        if total > target:
+            return
+        prev = -1
+        for i in range(start, len(candidates)):
+            if candidates[i] == prev:
+                continue
+            path.append(candidates[i])
+            backtrack(i + 1, path, total + candidates[i])
+            path.pop()
+            prev = candidates[i]
+
+    result = []
+    backtrack(0, [], 0)
+    return result
+
+
+def permutations(nums: List[int]) -> List[List[int]]:
+    """
+    Return all permutations of nums.
+    """
+    def backtrack(path, used):
+        if len(path) == len(nums):
+            result.append(path[:])
+            return
+        for i in range(len(nums)):
+            if used[i]:
+                continue
+            used[i] = True
+            path.append(nums[i])
+            backtrack(path, used)
+            path.pop()
+            used[i] = False
+
+    result = []
+    backtrack([], [False]*len(nums))
+    return result
+
+
+def combination_k_sum(k: int, n: int) -> List[List[int]]:
+    """
+    Find combinations of k numbers (1-9) that sum to n.
+    """
+    def backtrack(start, path, total):
+        if len(path) == k and total == n:
+            result.append(path[:])
+            return
+        for i in range(start, 10):
+            if total + i > n:
+                break
+            path.append(i)
+            backtrack(i + 1, path, total + i)
+            path.pop()
+
+    result = []
+    backtrack(1, [], 0)
+    return result
+
+
+def n_queens(n: int) -> List[List[str]]:
+    """
+    Solve the N-Queens problem.
+    """
+    def is_safe(r, c):
+        return c not in cols and (r - c) not in neg_diag and (r + c) not in pos_diag
+
+    def backtrack(r):
+        if r == n:
+            result.append(["".join(row) for row in board])
+            return
+        for c in range(n):
+            if is_safe(r, c):
+                board[r][c] = 'Q'
+                cols.add(c)
+                neg_diag.add(r - c)
+                pos_diag.add(r + c)
+
+                backtrack(r + 1)
+
+                board[r][c] = '.'
+                cols.remove(c)
+                neg_diag.remove(r - c)
+                pos_diag.remove(r + c)
+
+    result = []
+    board = [["."] * n for _ in range(n)]
+    cols = set()
+    neg_diag = set()
+    pos_diag = set()
+    backtrack(0)
+    return result
+
+
+def palindrome_partitioning(s: str) -> List[List[str]]:
+    """
+    Partition a string such that every substring is a palindrome.
+    """
+    def is_palindrome(sub):
+        return sub == sub[::-1]
+
+    def backtrack(start, path):
+        if start == len(s):
+            result.append(path[:])
+            return
+        for end in range(start + 1, len(s) + 1):
+            if is_palindrome(s[start:end]):
+                path.append(s[start:end])
+                backtrack(end, path)
+                path.pop()
+
+    result = []
+    backtrack(0, [])
+    return result
+
+
+def restore_ip_addresses(s: str) -> List[str]:
+    """
+    Restore valid IP addresses from string of digits.
+    """
+    def backtrack(start, path):
+        if len(path) == 4 and start == len(s):
+            result.append(".".join(path))
+            return
+        if len(path) >= 4:
+            return
+        for length in range(1, 4):
+            if start + length > len(s):
+                break
+            part = s[start:start+length]
+            if (part.startswith('0') and len(part) > 1) or int(part) > 255:
+                continue
+            backtrack(start + length, path + [part])
+
+    result = []
+    backtrack(0, [])
+    return result
+
+
+def generate_abbreviations(word: str) -> List[str]:
+    """
+    Generate all generalized abbreviations for a word.
+    """
+    def backtrack(pos, cur, count):
+        if pos == len(word):
+            if count > 0:
+                cur += str(count)
+            result.append(cur)
+            return
+        # Abbreviate this character
+        backtrack(pos + 1, cur, count + 1)
+        # Keep this character
+        backtrack(pos + 1, cur + (str(count) if count > 0 else "") + word[pos], 0)
+
+    result = []
+    backtrack(0, "", 0)
+    return result
+
+def subset_with_dup(nums: List[int]) -> List[List[int]]:
+    """
+    Return all possible subsets (the power set) with duplicates removed.
+    """
+    nums.sort()
+    def backtrack(start, path):
+        result.append(path[:])
+        for i in range(start, len(nums)):
+            if i > start and nums[i] == nums[i - 1]:
+                continue
+            path.append(nums[i])
+            backtrack(i + 1, path)
+            path.pop()
+
+    result = []
+    backtrack(0, [])
+    return result
+
+
+# Optional Test Section
+if __name__ == "__main__":
+    print("Palindrome Partitioning:", palindrome_partitioning("aab"))
+    print("Restore IPs:", restore_ip_addresses("25525511135"))
+    print("Abbreviations:", generate_abbreviations("word"))
+    print("Subsets with Duplicates:", subset_with_dup([1,2,2]))
+
