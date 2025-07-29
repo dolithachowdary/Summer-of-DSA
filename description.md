@@ -1,4 +1,3 @@
-
 # 📘 Project Description: Summer of DSA (Python)
 
 Welcome to my **Summer of DSA** journey — a collection of Python programs solving essential Data Structures and Algorithm problems, organized day by day. This is a self-paced learning initiative to practice, revise, and strengthen core problem-solving skills using Python.
@@ -34,6 +33,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 6   | Subsets, Subarrays, Prefix Sum, XOR Tricks  | 15+             | ✅ Done |
 | 7   | Backtracking, Combinations and Permutations | 15+             | ✅ Done |
 | 8   | Binary Search and Variants                  | 10+             | ✅ Done |
+| 9   | Binary Search on Answers                    | 10+             | ✅ Done |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -185,6 +185,24 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 
 ---
 
+### ✅ Day 9:
+
+**Binary Search on Answers (GFG Style)**
+
+* Find unique element where all others appear twice
+* Floor of square root (naive & binary search)
+* Find nth root of a number
+* Smallest divisor that keeps array sum ≤ K (naive + binary)
+* Koko eating bananas (naive + binary)
+* Minimum days to make M bouquets
+* Allocate books / Painter’s partition style problems
+* Minimum eating speed for monkeys (variation)
+* Ship packages within D days
+* Capacity to eat bananas with given time
+* Aggressive cows / Chessboard-style placement problems
+
+---
+
 ## 🛠 Tech Used
 
 * **Language:** Python 3
@@ -212,6 +230,3 @@ By the end of this project, I aim to:
 ---
 
 Let’s keep learning and coding! 🌱✨
-
----
-
