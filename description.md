@@ -34,6 +34,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 7   | Backtracking, Combinations and Permutations | 15+             | ✅ Done |
 | 8   | Binary Search and Variants                  | 10+             | ✅ Done |
 | 9   | Binary Search on Answers                    | 10+             | ✅ Done |
+| 10  | Matrices and Prime Computations             | 10+             | ✅ Done |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -42,7 +43,6 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 ## 📅 Day-Wise Highlights
 
 ### ✅ Day 1:
-
 * Unique elements in a list
 * Prime number checker
 * Vowel counting in a string
@@ -55,7 +55,6 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 ---
 
 ### ✅ Day 2:
-
 * First missing positive integer
 * Move zeros to end
 * Move even numbers to end
@@ -200,6 +199,23 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 * Ship packages within D days
 * Capacity to eat bananas with given time
 * Aggressive cows / Chessboard-style placement problems
+
+---
+
+### ✅ Day 10:
+
+**Matrices and Prime Computation**
+
+* Prime number count (Naive)
+* Prime number count using Sieve of Eratosthenes
+* Search for element in sorted 2D matrix (top-right elimination)
+* Matrix rotation by 90 degrees (extra space & in-place)
+* Sum of both diagonals in a matrix
+* Transpose of a matrix
+* Spiral order traversal of a matrix
+* Count number of primes in a 2D matrix
+* Matrix printing utilities for rotated and transformed output
+* Efficient memory and edge-case handling in matrix operations
 
 ---
 
