@@ -35,6 +35,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 8   | Binary Search and Variants                  | 10+             | ✅ Done |
 | 9   | Binary Search on Answers                    | 10+             | ✅ Done |
 | 10  | Matrices and Prime Computations             | 10+             | ✅ Done |
+| 11  | Matrix Traversals, Lexicographical Strings  | 10+             | ✅ Done |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -219,6 +220,20 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 
 ---
 
+### ✅ Day 11:
+
+**Matrix Traversals, Lexicographical Strings & Binary Search Problems**
+
+* Spiral traversal of a matrix (clockwise layer-by-layer)
+* Lexicographically smallest string after one move operation
+* Aggressive cows placement (Binary Search on Answer)
+* Trapping rain water using prefix max/min arrays
+* Count subarrays with sum = k (Prefix Hashmap)
+* Kth largest element in array using heap
+* Merge overlapping intervals
+* Strong inline comments and time complexity notes for each
+
+---
 ## 🛠 Tech Used
 
 * **Language:** Python 3
