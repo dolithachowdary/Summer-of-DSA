@@ -36,6 +36,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 9   | Binary Search on Answers                    | 10+             | ✅ Done |
 | 10  | Matrices and Prime Computations             | 10+             | ✅ Done |
 | 11  | Matrix Traversals, Lexicographical Strings  | 6+              | ✅ Done |
+| 12  | Binary Search Advanced                      | 5+              | ✅ Done |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -232,6 +233,13 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 * Kth largest element in array using heap
 * Merge overlapping intervals
 * Strong inline comments and time complexity notes for each
+
+### ✅ Day 12:
+* Binary Search Advanced – Allocation, Search, Peaks
+* Optimized Aggressive Cows using Binary Search (Maximize minimum distance)
+* Allocate books to minimize the max number of pages read by any student
+* Find peak element in an array (binary search for peak)
+* Koko Eating Bananas (min eating speed using binary search on answer)
 
 ---
 ## 🛠 Tech Used
