@@ -244,6 +244,26 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 * Koko Eating Bananas (min eating speed using binary search on answer)
 
 ---
+
+### ✅ Day 13:
+✅ Singly Linked List Problems
+* Construct a Linked List from an array
+Print a Linked List
+Find the Middle Node using Hare and Tortoise algorithm
+Delete the Middle Node
+Insert a Node in the Middle
+Delete the Head Node
+Delete the Tail Node
+Insert at Beginning
+Insert at End
+Reverse a Linked List
+Method 1: Using an array
+Method 2: In-place reversal (preferred)
+Cycle Detection using Floyd’s Cycle-Finding Algorithm
+Doubly Linked List Problems
+Create Doubly Linked List
+Print Doubly Linked List
+---
 ## 🛠 Tech Used
 
 * **Language:** Python 3
