@@ -237,7 +237,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 ---
 
 ### ✅ Day 12:
-* Binary Search Advanced – Allocation, Search, Peaks
+**Binary Search Advanced – Allocation, Search, Peaks**
 * Optimized Aggressive Cows using Binary Search (Maximize minimum distance)
 * Allocate books to minimize the max number of pages read by any student
 * Find peak element in an array (binary search for peak)
@@ -248,21 +248,21 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 ### ✅ Day 13:
 ✅ Singly Linked List Problems
 * Construct a Linked List from an array
-Print a Linked List
-Find the Middle Node using Hare and Tortoise algorithm
-Delete the Middle Node
-Insert a Node in the Middle
-Delete the Head Node
-Delete the Tail Node
-Insert at Beginning
-Insert at End
-Reverse a Linked List
+* Print a Linked List
+* Find the Middle Node using Hare and Tortoise algorithm
+* Delete the Middle Node
+* Insert a Node in the Middle
+* Delete the Head Node
+* Delete the Tail Node
+* Insert at Beginning
+* Insert at End
+* Reverse a Linked List : 
 Method 1: Using an array
 Method 2: In-place reversal (preferred)
-Cycle Detection using Floyd’s Cycle-Finding Algorithm
-Doubly Linked List Problems
-Create Doubly Linked List
-Print Doubly Linked List
+* Cycle Detection using Floyd’s Cycle-Finding Algorithm
+* Doubly Linked List Problems
+* Create Doubly Linked List
+* Print Doubly Linked List
 ---
 ## 🛠 Tech Used
 
