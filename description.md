@@ -37,6 +37,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 10  | Matrices and Prime Computations             | 10+             | ✅ Done |
 | 11  | Matrix Traversals, Lexicographical Strings  | 6+              | ✅ Done |
 | 12  | Binary Search Advanced                      | 5+              | ✅ Done |
+| 13  | Linked List, Single and Double              | 9+              | ✅ Done |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
