@@ -1,36 +1,36 @@
-#  linked list
+# Day 13: Linked List Operations (with inline comments)
 
+# Singly Linked List Node class
+default
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
 
+# Construct linked list from array
 def constructll(arr):
-    head=None
+    head = None
     for data in arr:
-        if (head==None):
-            head=Node(data)
-            temp=head
+        if head is None:
+            head = Node(data)
+            temp = head
         else:
-            temp.next=Node(data)
-            temp=temp.next
-    #printll(head)
+            temp.next = Node(data)
+            temp = temp.next
     return head
-arr=[1,2,3,4,5]
 
-#to print linked list
-
+# Function to print linked list
 def printll(head): 
-    temp=head
+    temp = head
     while temp:
-        print(str(temp.data)+"->",end="")
-        temp=temp.next
+        print(str(temp.data) + "->", end="")
+        temp = temp.next
 
-ll=constructll(arr)
-printll(ll) #1->2->3->4->5->
+arr = [1, 2, 3, 4, 5]
+ll = constructll(arr)
+printll(ll)  # Output: 1->2->3->4->5->
 
-#hare and tortoise algorithm to find middle element ***
-
+# Find middle using Hare and Tortoise algorithm
 def find_middle(head):
     slow = head
     fast = head
@@ -39,20 +39,21 @@ def find_middle(head):
         fast = fast.next.next
     return slow
 
-middle=find_middle(ll) #3
+middle = find_middle(ll)
 
+# Print linked list starting from middle node
 def print_middle_and_rest(middle):
-    
-    print("Rest of the linked list from middle:")
+    print("\nRest of the linked list from middle:")
     while middle:
         print(middle.data, end="->")
         middle = middle.next
-    
+
 print_middle_and_rest(middle)
-#delete middle node
+
+# Delete the middle node from the list
 def delete_middle(head):
     if head is None or head.next is None:
-        return None  # If the list is empty or has only one node, return None
+        return None
     prev = None
     slow = head
     fast = head
@@ -60,25 +61,29 @@ def delete_middle(head):
         prev = slow
         slow = slow.next
         fast = fast.next.next
-    prev.next=slow.next
-    slow.next=None
+    prev.next = slow.next
+    slow.next = None
     return head
-print()
-printll(delete_middle(ll)) #1->2->4->5->
 
-#insert at middle
+print("\n")
+printll(delete_middle(ll))  # Output: 1->2->4->5->
+
+# Insert a node at the middle of the list
 def insert_middle(head, data):
     if head is None:
         return Node(data)
-    len=0
-    temp=head
+
+    # Count the length
+    length = 0
+    temp = head
     while temp:
-        len+=1
-        temp=temp.next
-    if len%2==0:
-        prev=None
-        slow=head
-        fast=head
+        length += 1
+        temp = temp.next
+
+    if length % 2 == 0:
+        prev = None
+        slow = head
+        fast = head
         while fast and fast.next:
             prev = slow
             slow = slow.next
@@ -86,54 +91,45 @@ def insert_middle(head, data):
         new_node = Node(data)
         prev.next = new_node
         new_node.next = slow
-        return head
     else:
         slow = head
         fast = head
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
-        front=slow.next
+        front = slow.next
         new_node = Node(data)
         slow.next = new_node
         new_node.next = front
-        return head
+    return head
+
 insert_middle(ll, 3)
-print()
-printll(ll) #1 2 3 4 5
+print("\n")
+printll(ll)
 
-
-#delete head
+# Delete head node
 def delete_head(head):
-    front=head.next
-    head.next=None
+    front = head.next
+    head.next = None
     return front
-print()
-# printll(delete_head(ll))   #2 3 4 5 
 
-#delete tail
+# Delete tail node
 def delete_tail(head):
     if head is None or head.next is None:
-        return None  # If the list is empty or has only one node, return None
+        return None
     temp = head
     while temp.next.next:
         temp = temp.next
-    temp.next = None  # Remove the last node
+    temp.next = None
     return head
-print()
-# printll(delete_tail(ll))  #2 3 4
 
-#insert at beginning
+# Insert at the beginning
 def insert_beginning(head, data):
     new_node = Node(data)
     new_node.next = head
-    head = new_node
-    return head
-print()
-# ll = insert_beginning(ll, 1)
-printll(ll)  #1 2 3 4
+    return new_node
 
-#insert at end
+# Insert at the end
 def insert_end(head, data):
     if head is None:
         return Node(data)
@@ -143,77 +139,74 @@ def insert_end(head, data):
         temp = temp.next
     temp.next = new_node
     return head
-print()
-# ll = insert_end(ll, 5)
-printll(ll)  #1 2 3 4 5
 
-#reverse linked list
+# Reverse linked list (method 1 - using array)
 def reverse1(head):
     if head is None:
-            return None
-    temp=head
-    arr=[]
-    while(temp):
+        return None
+    temp = head
+    arr = []
+    while temp:
         arr.append(temp.data)
-        temp=temp.next
-    arr=arr[::-1]
-    i=0
-    temp=head
-    while(temp):
-        temp.data=arr[i]
-        i+=1
-        temp=temp.next
+        temp = temp.next
+    arr.reverse()
+    temp = head
+    for val in arr:
+        temp.data = val
+        temp = temp.next
     return head
-print()
 
-# printll(reverse1(ll))  #5 4 3 2 1
-
+# Reverse linked list (method 2 - in-place)
 def reverse2(head):
     prev = None
-    temp=head
+    temp = head
     while temp:
-        front=temp.next 
-        temp.next=prev
-        prev=temp
-        temp=front
+        front = temp.next
+        temp.next = prev
+        prev = temp
+        temp = front
     return prev
-print()
+
+print("\n")
 printll(reverse2(ll))
 
-#cycle detection , hare and tortoise algorithm
+# Cycle detection using Floyd’s Cycle-Finding Algorithm
 def has_cycle(head):
-    
     if head is None or head.next is None:
         return False
-    slow=head
-    fast=head
-    while(fast and fast.next):
-        slow=slow.next
-        fast=fast.next.next
-        if(slow==fast):
+    slow = head
+    fast = head
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+        if slow == fast:
             return True
     return False
-print(has_cycle(ll))
 
+print("\nCycle detected:", has_cycle(ll))
 
-# double linked list
+# Doubly Linked List Node class
 class Dnode:
     def __init__(self, data):
         self.data = data
         self.next = None
-        self.prev=None
+        self.prev = None
+
+# Create doubly linked list from array
 def createdll(arr):
-    head=None
+    head = None
+    temp = None
     for data in arr:
-        if(head==None):
-            head=Dnode(data)
-            temp=head
+        new_node = Dnode(data)
+        if head is None:
+            head = new_node
+            temp = new_node
         else:
-            new_node=Dnode(data)
-            new_node.prev=new_node
-            temp.next=new_node
-            temp=temp.next
+            temp.next = new_node
+            new_node.prev = temp
+            temp = temp.next
     return head
 
-print("dll")
-printll(createdll(arr))
+print("\nDoubly Linked List:")
+dll = createdll(arr)
+printll(dll)
