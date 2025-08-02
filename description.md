@@ -189,7 +189,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 
 ### ✅ Day 9:
 
-**Binary Search on Answers **
+**Binary Search on Answers**
 
 * Find unique element where all others appear twice
 * Floor of square root (naive & binary search)
