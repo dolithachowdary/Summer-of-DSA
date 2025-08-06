@@ -265,6 +265,19 @@ Method 2: In-place reversal (preferred)
 * Create Doubly Linked List
 * Print Doubly Linked List
 ---
+
+### ✅ Day 14:
+✅ Linked List Problems
+* Create Linked List from array
+* Print Linked List
+* Detect cycle in Linked List using Floyd’s Cycle Detection Algorithm
+* Find the starting node of a cycle
+* Find length of loop in Linked List
+* Sort Linked List by values
+* Check if Linked List is a palindrome
+
+--- 
+
 ## 🛠 Tech Used
 
 * **Language:** Python 3
