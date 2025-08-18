@@ -39,6 +39,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 12  | Binary Search Advanced                      | 5+              | ✅ Done |
 | 13  | Linked List, Single and Double              | 9+              | ✅ Done |
 | 14	| Cycle Detection, Sorting, Palindrome & BST	| 15+	            | ✅ Done |
+| 15  | Graphs (BFS, DFS, Flood Fill, Islands etc.) | 7+              | ✅ Done |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -276,7 +277,19 @@ Method 2: In-place reversal (preferred)
 * Sort Linked List by values
 * Check if Linked List is a palindrome
 
---- 
+---
+
+### ✅ Day 15:
+✅ Graph Problems
+* Build Adjacency List for Graph (undirected)
+* BFS Traversal of a Graph
+* DFS Traversal of a Graph
+* Count Number of Islands (grid-based DFS/BFS)
+* Flood Fill Algorithm
+* Connected Components in Graph
+* Shortest Path in Unweighted Graph (BFS-based)
+
+---
 
 ## 🛠 Tech Used
 
