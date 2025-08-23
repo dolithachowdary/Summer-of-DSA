@@ -40,6 +40,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 13  | Linked List, Single and Double              | 9+              | ✅ Done |
 | 14	| Cycle Detection, Sorting, Palindrome & BST	| 15+	            | ✅ Done |
 | 15  | Graphs (BFS, DFS, Flood Fill, Islands etc.) | 7+              | ✅ Done |
+| 16  | Sliding Window & Subarray Problems          | 15+             | ✅ Done |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -236,6 +237,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 * Kth largest element in array using heap
 * Merge overlapping intervals
 * Strong inline comments and time complexity notes for each
+
 ---
 
 ### ✅ Day 12:
@@ -265,6 +267,7 @@ Method 2: In-place reversal (preferred)
 * Doubly Linked List Problems
 * Create Doubly Linked List
 * Print Doubly Linked List
+
 ---
 
 ### ✅ Day 14:
@@ -288,6 +291,19 @@ Method 2: In-place reversal (preferred)
 * Flood Fill Algorithm
 * Connected Components in Graph
 * Shortest Path in Unweighted Graph (BFS-based)
+
+---
+
+### ✅ Day 16:
+✅ Sliding Window & Subarray Problems
+* Generate all subarrays
+* Maximum sum subarray of size k (brute force & sliding window)
+* Expansion and shrink technique
+* Longest subarray length with sum ≤ k (brute force & optimized O(N))
+* Sliding window variations for length problems
+* Leetcode 1423: Max points from cards (pick from both ends)
+* Longest substring without repeating characters (brute force & optimized hashmap)
+* Longest subarray with at most k zeros (Leetcode 1004, brute force & sliding window)
 
 ---
 
