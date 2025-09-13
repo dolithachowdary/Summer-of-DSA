@@ -41,6 +41,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 14	| Cycle Detection, Sorting, Palindrome & BST	| 15+	            | ✅ Done |
 | 15  | Graphs (BFS, DFS, Flood Fill, Islands etc.) | 7+              | ✅ Done |
 | 16  | Sliding Window & Subarray Problems          | 15+             | ✅ Done |
+| 17  |Stack, Two Pointers, LRU, MST, Word Ladder   | 5+              | ✅ Done |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
