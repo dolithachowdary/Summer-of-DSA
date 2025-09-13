@@ -308,6 +308,17 @@ Method 2: In-place reversal (preferred)
 
 ---
 
+✅ Day 17:
+
+✅ Stack, Two-Pointer, LRU, MST, BFS
+
+* Next Greater Element (Monotonic Stack)
+* Trapping Rain Water (Two-pointer optimization)
+* LRU Cache Implementation (OrderedDict / HashMap + DLL)
+* Minimum Spanning Tree using Kruskal’s Algorithm (DSU)
+* Word Ladder Problem (Shortest Transformation Sequence using BFS)
+---
+
 ## 🛠 Tech Used
 
 * **Language:** Python 3
