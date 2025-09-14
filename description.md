@@ -42,6 +42,8 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 15  | Graphs (BFS, DFS, Flood Fill, Islands etc.) | 7+              | ✅ Done |
 | 16  | Sliding Window & Subarray Problems          | 15+             | ✅ Done |
 | 17  |Stack, Two Pointers, LRU, MST, Word Ladder   | 5+              | ✅ Done |
+| 18  |Graph Algorithms (Shortest Paths, MST, SCC)  | 8+              | ✅ Done |
+
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -317,6 +319,21 @@ Method 2: In-place reversal (preferred)
 * LRU Cache Implementation (OrderedDict / HashMap + DLL)
 * Minimum Spanning Tree using Kruskal’s Algorithm (DSU)
 * Word Ladder Problem (Shortest Transformation Sequence using BFS)
+---
+
+✅ Day 18:
+
+✅ Binary Trees – Traversals, Views, and Properties
+
+* Binary Tree Traversals (Inorder, Preorder, Postorder – recursive & iterative)
+* Level Order Traversal (BFS) using Queue
+* Left View of Binary Tree
+* Right View of Binary Tree
+* Top View of Binary Tree
+* Bottom View of Binary Tree
+* Height / Depth of Binary Tree (recursive & iterative)
+* Diameter of Binary Tree (optimized DFS approach)
+
 ---
 
 ## 🛠 Tech Used
