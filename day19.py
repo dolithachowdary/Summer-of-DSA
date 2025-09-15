@@ -303,3 +303,25 @@ if __name__ == "__main__":
     print("Spellchecker:", spellchecker(wordlist, queries))
     # Output: ['kite', 'KiTe', 'KiTe', 'Hare', 'hare', '', '', 'KiTe', '', 'KiTe']
 
+
+⭐ Day 19: LeetCode Practice
+
+⭐ 274. H-Index
+   📌 Problem: Given an array of citations, return the researcher’s h-index.
+   🕒 Time Complexity: O(n log n) → sorting the array
+   💾 Space Complexity: O(1)
+
+⭐ 242. Valid Anagram
+   📌 Problem: Check if two strings are anagrams of each other.
+   🕒 Time Complexity: O(n) → counting characters
+   💾 Space Complexity: O(1) → fixed alphabet size
+
+⭐ 966. Vowel Spellchecker
+   📌 Problem: Implement a spellchecker that handles capitalization and vowel errors.
+   🕒 Time Complexity: O(N + Q * L)  
+       N = number of words in wordlist  
+       Q = number of queries  
+       L = average word length  
+   💾 Space Complexity: O(N * L)
+
+
