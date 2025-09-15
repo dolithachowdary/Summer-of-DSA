@@ -41,9 +41,9 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 14	| Cycle Detection, Sorting, Palindrome & BST	| 15+	            | ✅ Done |
 | 15  | Graphs (BFS, DFS, Flood Fill, Islands etc.) | 7+              | ✅ Done |
 | 16  | Sliding Window & Subarray Problems          | 15+             | ✅ Done |
-| 17  |Stack, Two Pointers, LRU, MST, Word Ladder   | 5+              | ✅ Done |
-| 18  |Graph Algorithms (Shortest Paths, MST, SCC)  | 8+              | ✅ Done |
-
+| 17  | Stack, Two Pointers, LRU, MST, Word Ladder  | 5+              | ✅ Done |
+| 18  | Binary Trees – Traversals, Views, Diameter  | 8+              | ✅ Done |
+| 19  | Leetcode Practice (H-Index, Anagram, Spell) | 3+              | ✅ Done |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -310,7 +310,7 @@ Method 2: In-place reversal (preferred)
 
 ---
 
-✅ Day 17:
+### ✅ Day 17:
 
 ✅ Stack, Two-Pointer, LRU, MST, BFS
 
@@ -319,9 +319,10 @@ Method 2: In-place reversal (preferred)
 * LRU Cache Implementation (OrderedDict / HashMap + DLL)
 * Minimum Spanning Tree using Kruskal’s Algorithm (DSU)
 * Word Ladder Problem (Shortest Transformation Sequence using BFS)
+
 ---
 
-✅ Day 18:
+### ✅ Day 18:
 
 ✅ Binary Trees – Traversals, Views, and Properties
 
@@ -333,6 +334,24 @@ Method 2: In-place reversal (preferred)
 * Bottom View of Binary Tree
 * Height / Depth of Binary Tree (recursive & iterative)
 * Diameter of Binary Tree (optimized DFS approach)
+
+---
+
+### ✅ Day 19:
+
+✅ Leetcode Practice Problems (Array, Hashing, Strings)
+
+* 274. H-Index – Compute maximum h-index from citation counts  
+   Time Complexity: O(n log n)  
+   Space Complexity: O(1)
+
+* 242. Valid Anagram – Check if two strings are anagrams  
+   Time Complexity: O(n)  
+   Space Complexity: O(1)
+
+* 966. Vowel Spellchecker – Handle capitalization and vowel errors in spellchecking  
+   Time Complexity: O(N + Q × L)  
+   Space Complexity: O(N × L)
 
 ---
 
