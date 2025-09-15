@@ -341,15 +341,15 @@ Method 2: In-place reversal (preferred)
 
 ✅ Leetcode Practice Problems (Array, Hashing, Strings)
 
-* 274. H-Index – Compute maximum h-index from citation counts  
+* H-Index – Compute maximum h-index from citation counts  
    Time Complexity: O(n log n)  
    Space Complexity: O(1)
 
-* 242. Valid Anagram – Check if two strings are anagrams  
+*  Valid Anagram – Check if two strings are anagrams  
    Time Complexity: O(n)  
    Space Complexity: O(1)
 
-* 966. Vowel Spellchecker – Handle capitalization and vowel errors in spellchecking  
+*  Vowel Spellchecker – Handle capitalization and vowel errors in spellchecking  
    Time Complexity: O(N + Q × L)  
    Space Complexity: O(N × L)
 
