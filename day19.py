@@ -199,3 +199,107 @@ if __name__ == "__main__":
 
     # LCS
     print("LCS 'abcde' & 'ace' (expected 3):", longest_common_subsequence("abcde", "ace"))
+
+
+"""
+⭐ Day 19: LeetCode Practice
+
+Problems:
+⭐ 274. H-Index
+⭐ 242. Valid Anagram
+⭐ 966. Vowel Spellchecker
+"""
+
+# ⭐ 274. H-Index
+def hIndex(citations):
+    """
+    Given an array of citations, return the researcher's h-index.
+    
+    ⭐ Time Complexity: O(n log n) → because of sorting
+    ⭐ Space Complexity: O(1)
+    """
+    citations.sort(reverse=True)
+    h = 0
+    for i, c in enumerate(citations):
+        if c >= i + 1:
+            h = i + 1
+        else:
+            break
+    return h
+
+
+# ⭐ 242. Valid Anagram
+def isAnagram(s, t):
+    """
+    Check if two strings are anagrams.
+    
+    ⭐ Time Complexity: O(n) → counting characters
+    ⭐ Space Complexity: O(1) → fixed alphabet size
+    """
+    if len(s) != len(t):
+        return False
+    count = [0] * 26
+    for ch in s:
+        count[ord(ch) - ord('a')] += 1
+    for ch in t:
+        count[ord(ch) - ord('a')] -= 1
+    for c in count:
+        if c != 0:
+            return False
+    return True
+
+
+# ⭐ 966. Vowel Spellchecker
+def spellchecker(wordlist, queries):
+    """
+    Implement a spellchecker that handles capitalization and vowel errors.
+    
+    ⭐ Time Complexity: O(N + Q * L)
+        N = number of words in wordlist
+        Q = number of queries
+        L = average word length
+    ⭐ Space Complexity: O(N * L)
+    """
+    def devowel(word):
+        return ''.join('*' if ch in 'aeiou' else ch for ch in word.lower())
+
+    words_perfect = set(wordlist)
+    words_cap = {}
+    words_vow = {}
+
+    for word in wordlist:
+        lower = word.lower()
+        if lower not in words_cap:
+            words_cap[lower] = word
+        dv = devowel(word)
+        if dv not in words_vow:
+            words_vow[dv] = word
+
+    ans = []
+    for query in queries:
+        if query in words_perfect:
+            ans.append(query)
+        elif query.lower() in words_cap:
+            ans.append(words_cap[query.lower()])
+        elif devowel(query) in words_vow:
+            ans.append(words_vow[devowel(query)])
+        else:
+            ans.append("")
+    return ans
+
+
+# ----------------- Testing -----------------
+if __name__ == "__main__":
+    # ⭐ H-Index
+    print("⭐ H-Index:", hIndex([3, 0, 6, 1, 5]))  # Output: 3
+
+    # ⭐ Valid Anagram
+    print("⭐ Valid Anagram:", isAnagram("anagram", "nagaram"))  # True
+    print("⭐ Valid Anagram:", isAnagram("rat", "car"))  # False
+
+    # ⭐ Vowel Spellchecker
+    wordlist = ["KiTe", "kite", "hare", "Hare"]
+    queries = ["kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"]
+    print("⭐ Spellchecker:", spellchecker(wordlist, queries))
+    # Output: ['kite', 'KiTe', 'KiTe', 'Hare', 'hare', '', '', 'KiTe', '', 'KiTe']
+
