@@ -210,13 +210,13 @@ Problems:
 ⭐ 966. Vowel Spellchecker
 """
 
-# ⭐ 274. H-Index
+#  274. H-Index
 def hIndex(citations):
     """
     Given an array of citations, return the researcher's h-index.
     
-    ⭐ Time Complexity: O(n log n) → because of sorting
-    ⭐ Space Complexity: O(1)
+     Time Complexity: O(n log n) → because of sorting
+     Space Complexity: O(1)
     """
     citations.sort(reverse=True)
     h = 0
@@ -228,13 +228,13 @@ def hIndex(citations):
     return h
 
 
-# ⭐ 242. Valid Anagram
+# 242. Valid Anagram
 def isAnagram(s, t):
     """
     Check if two strings are anagrams.
     
-    ⭐ Time Complexity: O(n) → counting characters
-    ⭐ Space Complexity: O(1) → fixed alphabet size
+     Time Complexity: O(n) → counting characters
+     Space Complexity: O(1) → fixed alphabet size
     """
     if len(s) != len(t):
         return False
@@ -249,16 +249,16 @@ def isAnagram(s, t):
     return True
 
 
-# ⭐ 966. Vowel Spellchecker
+#  966. Vowel Spellchecker
 def spellchecker(wordlist, queries):
     """
     Implement a spellchecker that handles capitalization and vowel errors.
     
-    ⭐ Time Complexity: O(N + Q * L)
+     Time Complexity: O(N + Q * L)
         N = number of words in wordlist
         Q = number of queries
         L = average word length
-    ⭐ Space Complexity: O(N * L)
+     Space Complexity: O(N * L)
     """
     def devowel(word):
         return ''.join('*' if ch in 'aeiou' else ch for ch in word.lower())
@@ -290,16 +290,16 @@ def spellchecker(wordlist, queries):
 
 # ----------------- Testing -----------------
 if __name__ == "__main__":
-    # ⭐ H-Index
-    print("⭐ H-Index:", hIndex([3, 0, 6, 1, 5]))  # Output: 3
+    #  H-Index
+    print(" H-Index:", hIndex([3, 0, 6, 1, 5]))  # Output: 3
 
-    # ⭐ Valid Anagram
-    print("⭐ Valid Anagram:", isAnagram("anagram", "nagaram"))  # True
-    print("⭐ Valid Anagram:", isAnagram("rat", "car"))  # False
+    #  Valid Anagram
+    print(" Valid Anagram:", isAnagram("anagram", "nagaram"))  # True
+    print(" Valid Anagram:", isAnagram("rat", "car"))  # False
 
-    # ⭐ Vowel Spellchecker
+    #  Vowel Spellchecker
     wordlist = ["KiTe", "kite", "hare", "Hare"]
     queries = ["kite", "Kite", "KiTe", "Hare", "HARE", "Hear", "hear", "keti", "keet", "keto"]
-    print("⭐ Spellchecker:", spellchecker(wordlist, queries))
+    print("Spellchecker:", spellchecker(wordlist, queries))
     # Output: ['kite', 'KiTe', 'KiTe', 'Hare', 'hare', '', '', 'KiTe', '', 'KiTe']
 
