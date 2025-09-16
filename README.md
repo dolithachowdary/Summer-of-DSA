@@ -23,6 +23,32 @@ Each folder corresponds to one day of learning and contains Python scripts for t
 
 ---
 
+## 🧾 Progress Tracker
+
+| Day | Topics Covered                              | Problems Solved | Status |
+| --- | ------------------------------------------- | --------------- | ------ |
+| 1   | Basics, Strings, Prime Check, Encoding      | 10+             | ✅ Done |
+| 2   | Arrays, Bit Manipulation, Swapping          | 6+              | ✅ Done |
+| 3   | Bit Manipulation, Recursion                 | 10+             | ✅ Done |
+| 4   | Recursion (Digit/Number/String Based)       | 9               | ✅ Done |
+| 5   | Recursion (Advanced, Lists, Strings, Math)  | 20              | ✅ Done |
+| 6   | Subsets, Subarrays, Prefix Sum, XOR Tricks  | 15+             | ✅ Done |
+| 7   | Backtracking, Combinations and Permutations | 15+             | ✅ Done |
+| 8   | Binary Search and Variants                  | 10+             | ✅ Done |
+| 9   | Binary Search on Answers                    | 10+             | ✅ Done |
+| 10  | Matrices and Prime Computations             | 10+             | ✅ Done |
+| 11  | Matrix Traversals, Lexicographical Strings  | 6+              | ✅ Done |
+| 12  | Binary Search Advanced                      | 5+              | ✅ Done |
+| 13  | Linked List, Single and Double              | 9+              | ✅ Done |
+| 14	| Cycle Detection, Sorting, Palindrome & BST	| 15+	            | ✅ Done |
+| 15  | Graphs (BFS, DFS, Flood Fill, Islands etc.) | 7+              | ✅ Done |
+| 16  | Sliding Window & Subarray Problems          | 15+             | ✅ Done |
+| 17  | Stack, Two Pointers, LRU, MST, Word Ladder  | 5+              | ✅ Done |
+| 18  | Binary Trees – Traversals, Views, Diameter  | 8+              | ✅ Done |
+| 19  | Leetcode Practice (H-Index, Anagram, Spell) | 3+              | ✅ Done |
+| 20  | Advanced Trees + Graphs +  Sliding Window   | 8+              | ✅ Done |
+
+---
 
 ## ✅ Goals
 
