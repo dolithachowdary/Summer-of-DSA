@@ -44,6 +44,8 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 17  | Stack, Two Pointers, LRU, MST, Word Ladder  | 5+              | ✅ Done |
 | 18  | Binary Trees – Traversals, Views, Diameter  | 8+              | ✅ Done |
 | 19  | Leetcode Practice (H-Index, Anagram, Spell) | 3+              | ✅ Done |
+| 20  | Advanced Trees + Graphs +  Sliding Window   | 8+              | ✅ Done |
+
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -352,6 +354,21 @@ Method 2: In-place reversal (preferred)
 *  Vowel Spellchecker – Handle capitalization and vowel errors in spellchecking  
    Time Complexity: O(N + Q × L)  
    Space Complexity: O(N × L)
+
+---
+
+### ✅ Day 20:
+
+✅ Advanced Trees, Graphs, Heaps, Sliding Window
+
+* Binary Tree Level Order Traversal (BFS)
+* Lowest Common Ancestor (Binary Tree)
+* Detect Cycle in Directed Graph (DFS)
+* Topological Sort (Kahn’s Algorithm)
+* Dijkstra’s Algorithm (Shortest Path in Weighted Graph)
+* Kth Largest Element in an Array (Heap)
+* Median of Two Sorted Arrays (Binary Search Partition)
+* Sliding Window Maximum (Deque)
 
 ---
 
