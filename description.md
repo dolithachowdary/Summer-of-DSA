@@ -372,6 +372,16 @@ Method 2: In-place reversal (preferred)
 
 ---
 
+✅ **Day 21**  
+* Strings, Hashing, Heaps, DP  
+* Replace Words  
+* Top K Frequent Words  
+* Sort Characters By Frequency  
+* Group Anagrams  
+* Longest Palindrome  
+* Word Break  
+
+---
 ## 🛠 Tech Used
 
 * **Language:** Python 3
