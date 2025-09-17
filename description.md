@@ -45,6 +45,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 18  | Binary Trees – Traversals, Views, Diameter  | 8+              | ✅ Done |
 | 19  | Leetcode Practice (H-Index, Anagram, Spell) | 3+              | ✅ Done |
 | 20  | Advanced Trees + Graphs +  Sliding Window   | 8+              | ✅ Done |
+| 21  | Leetcode Practice - Strings, Hashing, DP    | 8+              | ✅ Done |
 
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
