@@ -383,6 +383,20 @@ Method 2: In-place reversal (preferred)
 * Word Break  
 
 ---
+
+✅ Day 22:
+
+✅ Arrays, Math & Greedy
+
+- Third Maximum Number (LC 414)
+- Majority Element (Boyer-Moore Voting Algorithm)
+- Product of Array Except Self (LC 238)
+- Rotate Array (Reverse Trick)
+- Best Time to Buy and Sell Stock (LC 121)
+- Gas Station (LC 134, Greedy)
+
+--- 
+
 ## 🛠 Tech Used
 
 * **Language:** Python 3
