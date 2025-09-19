@@ -145,6 +145,74 @@ def exist(board: List[List[str]], word: str) -> bool:
                 return True
     return False
 
+# 7) Course Schedule (Detect Cycle in Directed Graph)
+def can_finish(numCourses: int, prerequisites: List[List[int]]) -> bool:
+    """
+    Detect if all courses can be finished.
+    Approach: Topological Sort (Kahn's Algo)
+    Time: O(V+E), Space: O(V+E)
+    """
+    indegree = [0] * numCourses
+    graph = [[] for _ in range(numCourses)]
+    for a, b in prerequisites:
+        graph[b].append(a)
+        indegree[a] += 1
+
+    q = deque([i for i in range(numCourses) if indegree[i] == 0])
+    visited = 0
+    while q:
+        node = q.popleft()
+        visited += 1
+        for nei in graph[node]:
+            indegree[nei] -= 1
+            if indegree[nei] == 0:
+                q.append(nei)
+    return visited == numCourses
+
+
+# 8) Merge Intervals
+def merge(intervals: List[List[int]]) -> List[List[int]]:
+    """
+    Merge overlapping intervals.
+    Time: O(n log n), Space: O(n)
+    """
+    intervals.sort()
+    res = [intervals[0]]
+    for start, end in intervals[1:]:
+        if start <= res[-1][1]:
+            res[-1][1] = max(res[-1][1], end)  # merge
+        else:
+            res.append([start, end])
+    return res
+
+
+# 9) Spiral Matrix Traversal
+def spiral_order(matrix: List[List[int]]) -> List[int]:
+    """
+    Traverse matrix in spiral order.
+    Time: O(m*n), Space: O(1)
+    """
+    res = []
+    top, bottom, left, right = 0, len(matrix)-1, 0, len(matrix[0])-1
+    while top <= bottom and left <= right:
+        for j in range(left, right+1):
+            res.append(matrix[top][j])
+        top += 1
+        for i in range(top, bottom+1):
+            res.append(matrix[i][right])
+        right -= 1
+        if top <= bottom:
+            for j in range(right, left-1, -1):
+                res.append(matrix[bottom][j])
+            bottom -= 1
+        if left <= right:
+            for i in range(bottom, top-1, -1):
+                res.append(matrix[i][left])
+            left += 1
+    return res
+
+
+
 
 # -------------------------
 # Quick Tests
