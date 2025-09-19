@@ -229,3 +229,6 @@ if __name__ == "__main__":
              ["S","F","C","S"],
              ["A","D","E","E"]]
     print("Word Search (ABCCED):", exist(board, "ABCCED"))  # True
+     print("Course Schedule:", can_finish(2, [[1,0]]))  # True
+    print("Merge Intervals:", merge([[1,3],[2,6],[8,10],[15,18]]))
+    print("Spiral Order:", spiral_order([[1,2,3],[4,5,6],[7,8,9]]))
