@@ -47,7 +47,7 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 20  | Advanced Trees + Graphs +  Sliding Window   | 8+              | ✅ Done |
 | 21  | Leetcode Practice - Strings, Hashing, DP    | 8+              | ✅ Done |
 | 22  | Leetcode Practice - Arrays, LL and Greedy   | 8+              | ✅ Done |
-
+| 23  | leetcode practice - Arrays, heap & searching| 8+              | ✅ Done |
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
@@ -397,6 +397,19 @@ Method 2: In-place reversal (preferred)
 - Gas Station (LC 134, Greedy)
 
 --- 
+
+✅ Day 23:
+
+✅ Arrays, heap & searching
+
+- sliding Window Maximum
+- kth element
+- word search
+- top frequency
+- cycle detection
+- spiral traversal
+
+---
 
 ## 🛠 Tech Used
 
