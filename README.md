@@ -50,7 +50,7 @@ Each folder corresponds to one day of learning and contains Python scripts for t
 | 21  | Leetcode Practice - Strings, Hashing, DP    | 8+              | ✅ Done |
 | 22  | Leetcode Practice - Arrays, LL and Greedy   | 8+              | ✅ Done |
 | 23  | leetcode practice - Arrays, heap & searching| 8+              | ✅ Done |
-
+| 24  | leetcode practice - Backtracking, DP        | 7+              | ✅ Done |
 ---
 
 ## ✅ Goals
