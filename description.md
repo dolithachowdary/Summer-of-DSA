@@ -48,6 +48,8 @@ Each day’s problems are written in separate Python files (e.g., `day1.py`, `da
 | 21  | Leetcode Practice - Strings, Hashing, DP    | 8+              | ✅ Done |
 | 22  | Leetcode Practice - Arrays, LL and Greedy   | 8+              | ✅ Done |
 | 23  | leetcode practice - Arrays, heap & searching| 8+              | ✅ Done |
+| 24  | leetcode practice - Backtracking, DP        | 7+              | ✅ Done |
+
 
 > ✅ = Completed, ⏳ = In Progress, ❌ = Not Started
 
