@@ -410,6 +410,20 @@ Method 2: In-place reversal (preferred)
 - spiral traversal
 
 ---
+✅ Day 24:
+
+✅ backtracking , DP
+
+- Sudoku Solver (Backtracking)
+- Word Search II (Trie + DFS)
+- Snakes and Ladders (BFS)
+- LFU Cache Implementation (HashMap + DLL + Frequency Map)
+- Candy Distribution (Greedy)
+- Sliding Window Maximum (Deque)
+- Longest Consecutive Sequence (HashSet)
+- Clone Graph (DFS/BFS + HashMap)
+
+---
 
 ## 🛠 Tech Used
 
